@@ -1,0 +1,227 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Utilisation d'une police moderne */
+}
+
+body {
+    background-color: #ffffff; /* Couleur de fond neutre et claire */
+    color: #333; /* Couleur principale du texte */
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navigation Menu */
+nav {
+    background-color: #0a74da; /* Couleur principale vive */
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajout d'ombre pour la profondeur */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out; /* Transition douce pour l'effet hover */
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Couleur différente au survol */
+}
+
+/* Hero Section (Page d'Accueil) */
+.hero {
+    background: linear-gradient(rgba(10, 116, 218, 0.7), rgba(10, 116, 218, 0.7)), url('hero-bg.jpg') center/cover; /* Image d'arrière-plan avec un dégradé */
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero button {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.hero button:hover {
+    background-color: #fff;
+    color: #0a74da;
+}
+
+/* Section Styles */
+section {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #0a74da;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+}
+
+ul li::before {
+    content: "•";
+    color: #0a74da;
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+/* Style pour les boutons et champs */
+button, input[type="password"] {
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+button {
+    background-color: #0a74da;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffcc00;
+    color: #333;
+}
+
+input[type="password"] {
+    background-color: #f3f4f6;
+    width: 300px;
+    margin-right: 10px;
+}
+
+input[type="password"]:focus {
+    border-color: #0a74da;
+}
+
+/* Document Secure Section */
+.document-secure {
+    text-align: center;
+}
+
+#document-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    display: none;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#document-content.show {
+    display: block;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Activities and Veille Sections */
+.activities ul, .veille ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.activities ul li, .veille ul li {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 250px;
+    text-align: center;
+}
+
+.activities ul li:hover, .veille ul li:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.activities ul li h3, .veille ul li h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.activities ul li p, .veille ul li p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+        
